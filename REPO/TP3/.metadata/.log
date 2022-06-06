@@ -1,0 +1,88 @@
+!SESSION 2022-05-26 19:11:41.301 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 2 0 2022-05-26 19:13:29.132
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-26 19:13:29.132
+!MESSAGE Commands should really have a category: plug-in='com.espressif.idf.ui', id='com.espressif.commands.cleanCommand', categoryId='com.espressif.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-05-26 19:13:36.196
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-26 19:13:36.196
+!MESSAGE Commands should really have a category: plug-in='com.espressif.idf.ui', id='com.espressif.commands.cleanCommand', categoryId='com.espressif.commands.category'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-26 19:13:52.178
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-26 19:13:52.179
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-26 19:13:52.179
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-26 19:13:52.179
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:13:53.768
+!MESSAGE Eclipse Install location::file:/home/luis/eclipse/cpp-2021-12/eclipse/
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:13:53.769
+!MESSAGE esp-idf.json file doesnt exist at this location: {0}
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:15:02.034
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:15:02.118
+!MESSAGE idf_tools.py path: /home/luis/esp/esp-idf/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:15:02.119
+!MESSAGE [/home/luis/esp/esp-idf/tools/idf_tools.py, export, --format=key-value]
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:15:08.191
+!MESSAGE idf_tools.py export output: 
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-26 19:15:08.192
+!MESSAGE [/home/luis/.local/bin:/home/luis/esp/esp-idf/components/esptool_py/esptool:/home/luis/esp/esp-idf/components/espcoredump:/home/luis/esp/esp-idf/components/partition_table:/home/luis/esp/esp-idf/components/app_update:/home/luis/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin:/home/luis/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-8.4.0/xtensa-esp32s2-elf/bin:/home/luis/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-8.4.0/xtensa-esp32s3-elf/bin:/home/luis/.espressif/tools/xtensa-clang/12.0.1-d9341b81fc/xtensa-esp32-elf-clang/bin:/home/luis/.espressif/tools/riscv32-esp-elf/esp-2021r2-8.4.0/riscv32-esp-elf/bin:/home/luis/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/home/luis/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/home/luis/.espressif/tools/cmake/3.20.3/bin:/home/luis/.espressif/tools/openocd-esp32/v0.11.0-esp32-20211220/openocd-esp32/bin:/home/luis/.espressif/tools/ninja/1.10.2/:/home/luis/.espressif/python_env/idf4.4_py3.6_env/bin:/home/luis/esp/esp-idf/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin]
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-26 19:15:08.399
+!MESSAGE Indexed 'LEDs' (0 sources, 0 headers) in 0,004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-05-31 19:23:19.226 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 2 0 2022-05-31 19:27:30.097
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-31 19:27:30.097
+!MESSAGE Commands should really have a category: plug-in='com.espressif.idf.ui', id='com.espressif.commands.cleanCommand', categoryId='com.espressif.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-05-31 19:27:38.601
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-31 19:27:38.601
+!MESSAGE Commands should really have a category: plug-in='com.espressif.idf.ui', id='com.espressif.commands.cleanCommand', categoryId='com.espressif.commands.category'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-31 19:27:59.176
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-31 19:27:59.177
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-31 19:27:59.180
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-05-31 19:27:59.181
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-31 19:28:01.601
+!MESSAGE Eclipse Install location::file:/home/luis/eclipse/cpp-2021-12/eclipse/
+
+!ENTRY com.espressif.idf.core 1 0 2022-05-31 19:28:01.601
+!MESSAGE esp-idf.json file doesnt exist at this location: {0}
