@@ -58,13 +58,61 @@
 \pagebreak
 
 \section{Introducción}
+En el presente documento se detallarán todos los aspectos relacionados con la especificación del Master Test Plan referentes al desarrollo del analizador modular de ambiente, cuyo propósito es realizar una valoración del ambiente con niveles de temperatura, gases presentes y ruido. Todos estos datos serán visualizados por el usuario mediante una aplicación para smartphones.
+\subsection{Contenidos}
+Los contenidos del Master Test Plan son:
+\begin{itemize}
+\item Asignaciones.
+\item Bases del test.
+\item Estrategia general del test.
+\item Estrategia por nivel de prueba
+\end{itemize}
 
-\subsection{Propósito}
+\section{Asignaciones}
 
-\subsection{Ámbito del sistema}
+\subsection{Responsable}
+El responsable de la elaboración del documento es Luis Storaccio, encargado del desarrollo del proyecto. 
+\subsection{Contratista}
+La asignación es ejecutada bajo la responsabilidad de Luis Storaccio, jefe del testing del desarrollo del proyecto.
+\subsection{Alcance}
+El alcance del test de aceptación es el dispositivo analizador modular de ambiente.
+\subsection{Objetivos}
+Los objetivos son:
+\begin{itemize}
+\item Determinar si el sistema cumple con los requerimientos.
+\item Reportar las diferencias entre comportamiento deseado y observado.
+\item Proveer de funciones de test de forma automática para el firmware, que pueda ser reutilizada en versiones futuras.
+\end{itemize}
+\subsection{Precondiciones}
+Se realizarán formaciones para las pruebas que lo requieran.
+\section{Bases del test}
+Las bases del test consisten en:
+\begin{itemize}
+\item Planificación y especificaciones del dispositivo.
+\item Especificación de requerimientos del software.
+\end{itemize}
+\section{Estrategia general del test}
+\subsection{Características de calidad}
+La siguiente tabla muestra la selección de las características de calidad ISO/IEC9126 con su respectiva importancia relativa.
 
-\subsection{Referencias}
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}\hline \hline
+ \bf Características de calidad & \bf Importancia relativa (\%)  \\ \hline \hline
+ Funcionalidad & 20   \\
+ Confiabilidad & 30   \\
+ Usabilidad &   30    \\
+ Eficiencia &		\\
+ Mantenibilidad & 20    \\
+ Portabilidad &  \\ \hline
+\end{tabular}
+\end{table}
+\begin{itemize}
+\item Funcionalidad: el software del producto debe cumplir con los requerimientos establecidos y es por ello que posee una importancia relativa del 20\%.
 
-\subsection{Visión general del documento}
+\item Confiabilidad: es prescindible que el software presente un nivel de confiabilidad medio, debido a que el mismo realiza la lectura de valores de gases presente en el ambiente. 
+\item Usabilidad:
+\item Mantenibilidad:
+\end{itemize}
 
 \end{document}

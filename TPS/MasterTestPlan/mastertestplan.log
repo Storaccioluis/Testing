@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.21)  5 JUN 2022 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.21)  6 JUN 2022 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,43 +981,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
- Make it at least 14.6104pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
+[2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./mastertestplan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `mastertestplan.out' has not changed.
-(rerunfilecheck)             Checksum: 7B818ACAC587DE12242AD41FD2B4EA42;321.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+(rerunfilecheck)             Checksum: 8278F00E721A2FF09DA20F44CF66A17D;644.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 7991 strings out of 494747
- 111399 string characters out of 6176206
- 191929 words of memory out of 5000000
- 11176 multiletter control sequences out of 15000+600000
- 17074 words of font info for 52 fonts, out of 8000000 for 9000
+ 8007 strings out of 494747
+ 111590 string characters out of 6176206
+ 193935 words of memory out of 5000000
+ 11184 multiletter control sequences out of 15000+600000
+ 17411 words of font info for 53 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 36i,11n,43p,287b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600p
+ 36i,11n,43p,411b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600p
+k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600p
 k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600p
 k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600p
 k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k> </home/luis/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600p
 k>
-Output written on mastertestplan.pdf (3 pages, 45414 bytes).
+Output written on mastertestplan.pdf (4 pages, 64496 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
