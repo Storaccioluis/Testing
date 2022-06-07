@@ -1,7 +1,7 @@
 % Created 2020-04-24 vie 23:03
 % Intended LaTeX compiler: pdflatex
 %\documentclass[11pt,a4paper, twosite]{article}
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
@@ -21,8 +21,6 @@
 \usepackage{graphicx}
 \usepackage{chngpage}
 \usepackage[table]{xcolor}      % <-- changed
-\usepackage{placeins}
-\usepackage{times} 
 \fancyhead[RO,LE]{\thepage}
 \fancyhead[LO]{\emph{\uppercase{\leftmark}}}
 \fancyfoot{}
@@ -39,35 +37,15 @@
     pdflang={English}}
 \begin{document}
 
-%\maketitle
-%\thispagestyle{empty}
-%\pagebreak
-\begin{titlepage}
-\centering
-{\bfseries\LARGE Testing de Software \par}
+\maketitle
+\tableofcontents
 
-\vspace{3cm}
-{\scshape\Huge Master Test Plan \par}
-\vspace{3cm}
-\includegraphics[scale=0.8]{Figuras/logoFIUBA.pdf} 
-\vfill
-{\Large Autor: \par}
-{\Large Luis Sebastián Storaccio \par}
-\vfill
-{\Large Junio 2022 \par}
-\end{titlepage} 
-
-\thispagestyle{empty}
-{\setlength{\parskip}{0pt}
-\tableofcontents{}
-}
-\pagebreak
-
+\newpage
 
 \section*{Registros de cambios}
 \label{sec:registro}
-\vspace{5cm}
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \label{tab:registro}
     \centering
      
@@ -134,7 +112,7 @@ Las bases del test consisten en:
 \subsection{Características de calidad}
 La siguiente tabla muestra la selección de las características de calidad
 ISO/IEC9126 con su respectiva importancia relativa.
-\FloatBarrier
+
 \begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|}\hline \hline
@@ -171,8 +149,8 @@ ISO/IEC9126 con su respectiva importancia relativa.
           y eliminando posibles bugs.
 \end{itemize}
 \subsection{Asignación de características de calidad a los niveles de prueba}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
 
        \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|X|c|X|c|@{}}\hline \hline
@@ -232,8 +210,8 @@ Nota:\\
 Vacio: la característica calidad no representa un problema en este subsistema. \\
 
 \subsection{Test unitario}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -250,8 +228,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -265,10 +243,9 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
 
-\newpage
+
 \subsection{Test de integración de software}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -285,8 +262,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -301,8 +278,7 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \end{table}
 
 \subsection{Test de integración de software/hardware}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -319,8 +295,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -332,10 +308,10 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
 
-\newpage
+
 \subsection{Test de sistema}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -352,8 +328,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -366,8 +342,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \end{table}
 
 \subsection{Test de aceptación}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -384,8 +360,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -396,10 +372,9 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
-\newpage
+
 \subsection{Test de campos}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -416,8 +391,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}

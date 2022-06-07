@@ -1,61 +1,55 @@
-% Created 2020-04-24 vie 23:03
-% Intended LaTeX compiler: pdflatex
-%\documentclass[11pt,a4paper, twosite]{article}
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage{hyperref}
-\usepackage[left=2.50cm, right=2.0cm, top=2.50cm, bottom=2.00cm]{geometry}
-\usepackage{fancyhdr}
-\usepackage{tabularx}
-\usepackage{graphicx}
-\usepackage{chngpage}
-\usepackage[table]{xcolor}      % <-- changed
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%codirector, % Uncomment to add a codirector to the title page
+]{charter} 
+\usepackage{pdfpages}
 \usepackage{placeins}
-\usepackage{times} 
-\fancyhead[RO,LE]{\thepage}
-\fancyhead[LO]{\emph{\uppercase{\leftmark}}}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{1.0pt}
-\pagestyle{fancy}
-\date{}
-\title{Master test plan para analizador modular de ambiente}
-\hypersetup{
-    pdfauthor={},
-    pdftitle={IEEE-830},
-    pdfkeywords={},
-    pdfsubject={},
-    pdfcreator={Emacs 26.2 (Org mode 9.1.9)},
-    pdflang={English}}
+\usepackage{graphicx}
+
+
+% El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
+\titulo{Calificador modular de ambiente} 
+
+% Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
+\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+%\posgrado{Carrera de Especialización en Intelegencia Artificial}
+%\posgrado{Maestría en Sistemas Embebidos} 
+%\posgrado{Maestría en Internet de las cosas}
+
+% Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
+\autor{Luis Sebastián Storaccio} 
+
+% El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
+\director{Ing. Matías Brignone}
+\pertenenciaDirector{CESE-FIUBA} 
+% FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
+%\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+\pertenenciaCoDirector{FIUBA}
+
+% Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
+\cliente{Luis Sebastián Storaccio}
+\empresaCliente{Emprendimiento personal}
+
+% Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
+\juradoUno{Nombre y Apellido (1)}
+\pertenenciaJurUno{pertenencia (1)} 
+\juradoDos{Nombre y Apellido (2)}
+\pertenenciaJurDos{pertenencia (2)}
+\juradoTres{Nombre y Apellido (3)}
+\pertenenciaJurTres{pertenencia (3)}
+ 
+\fechaINICIO{21 de octubre de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{9 de diciembre de 2021} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{17 de octubre de 2022}	%Fecha de defensa pública del trabajo final
+
+
 \begin{document}
 
-%\maketitle
-%\thispagestyle{empty}
-%\pagebreak
-\begin{titlepage}
-\centering
-{\bfseries\LARGE Testing de Software \par}
+\maketitle
+\thispagestyle{empty}
+\pagebreak
 
-\vspace{3cm}
-{\scshape\Huge Master Test Plan \par}
-\vspace{3cm}
-\includegraphics[scale=0.8]{Figuras/logoFIUBA.pdf} 
-\vfill
-{\Large Autor: \par}
-{\Large Luis Sebastián Storaccio \par}
-\vfill
-{\Large Junio 2022 \par}
-\end{titlepage} 
 
 \thispagestyle{empty}
 {\setlength{\parskip}{0pt}
@@ -66,11 +60,10 @@
 
 \section*{Registros de cambios}
 \label{sec:registro}
-\vspace{5cm}
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \label{tab:registro}
     \centering
-     
     \begin{tabularx}{\linewidth}{@{}|c|X|c|@{}}
         \hline
         \rowcolor[HTML]{d6c6c3} 
@@ -134,7 +127,7 @@ Las bases del test consisten en:
 \subsection{Características de calidad}
 La siguiente tabla muestra la selección de las características de calidad
 ISO/IEC9126 con su respectiva importancia relativa.
-\FloatBarrier
+
 \begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|}\hline \hline
@@ -171,8 +164,8 @@ ISO/IEC9126 con su respectiva importancia relativa.
           y eliminando posibles bugs.
 \end{itemize}
 \subsection{Asignación de características de calidad a los niveles de prueba}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
 
        \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|X|c|X|c|@{}}\hline \hline
@@ -232,8 +225,8 @@ Nota:\\
 Vacio: la característica calidad no representa un problema en este subsistema. \\
 
 \subsection{Test unitario}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -250,8 +243,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -265,10 +258,9 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
 
-\newpage
+
 \subsection{Test de integración de software}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -285,8 +277,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -301,8 +293,7 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \end{table}
 
 \subsection{Test de integración de software/hardware}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -319,8 +310,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -332,10 +323,10 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
 
-\newpage
+
 \subsection{Test de sistema}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -352,8 +343,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -366,8 +357,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \end{table}
 
 \subsection{Test de aceptación}
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -384,8 +375,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -396,10 +387,9 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
-\newpage
+
 \subsection{Test de campos}
-\FloatBarrier
-\begin{table}[!ht]
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
@@ -416,8 +406,8 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
     \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
 \end{table}
 
-\FloatBarrier
-\begin{table}[!ht]
+
+\begin{table}[ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
     \rowcolor[HTML]{d6c6c3}
