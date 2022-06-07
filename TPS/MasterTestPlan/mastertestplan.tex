@@ -20,9 +20,9 @@
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{chngpage}
-\usepackage[table]{xcolor}      % <-- changed
+\usepackage[table]{xcolor}	% <-- changed
 \usepackage{placeins}
-\usepackage{times} 
+\usepackage{times}
 \fancyhead[RO,LE]{\thepage}
 \fancyhead[LO]{\emph{\uppercase{\leftmark}}}
 \fancyfoot{}
@@ -43,26 +43,25 @@
 %\thispagestyle{empty}
 %\pagebreak
 \begin{titlepage}
-\centering
-{\bfseries\LARGE Testing de Software \par}
+    \centering
+    {\bfseries\LARGE Testing de Software \par}
 
-\vspace{3cm}
-{\scshape\Huge Master Test Plan \par}
-\vspace{3cm}
-\includegraphics[scale=0.8]{Figuras/logoFIUBA.pdf} 
-\vfill
-{\Large Autor: \par}
-{\Large Luis Sebastián Storaccio \par}
-\vfill
-{\Large Junio 2022 \par}
-\end{titlepage} 
+    \vspace{3cm}
+    {\scshape\Huge Master Test Plan \par}
+    \vspace{3cm}
+    \includegraphics[scale=0.8]{Figuras/logoFIUBA.pdf}
+    \vfill
+    {\Large Autor: \par}
+    {\Large Luis Sebastián Storaccio \par}
+    \vfill
+    {\Large Junio 2022 \par}
+\end{titlepage}
 
 \thispagestyle{empty}
 {\setlength{\parskip}{0pt}
-\tableofcontents{}
+    \tableofcontents{}
 }
 \pagebreak
-
 
 \section*{Registros de cambios}
 \label{sec:registro}
@@ -70,10 +69,10 @@
 \begin{table}[!ht]
     \label{tab:registro}
     \centering
-     
+
     \begin{tabularx}{\linewidth}{@{}|c|X|c|@{}}
         \hline
-        \rowcolor[HTML]{d6c6c3} 
+        \rowcolor[HTML]{d6c6c3}
         \bf Revisión & \multicolumn{1}{c|}{\bf Detalles de los cambios
         realizados}  &
         \bf Fecha
@@ -138,7 +137,7 @@ ISO/IEC9126 con su respectiva importancia relativa.
 \begin{table}[ht]
     \centering
     \begin{tabular}{|l|l|}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
+        \rowcolor[HTML]{d6c6c3}
         \bf Características de calidad & \bf Importancia relativa (\%) \\
         \hline
         \hline
@@ -163,11 +162,14 @@ ISO/IEC9126 con su respectiva importancia relativa.
           valores de
           gases presente en el ambiente.
     \item Usabilidad: como el producto está enfocado para usuarios
-          domiciliares, el software deberá presentar al usuario un nivel bajo de
-          dificultad en cuanto al conexionado y al acceso de la información. Por tal
+          domiciliares, el software deberá presentar al usuario un nivel bajo
+          de
+          dificultad en cuanto al conexionado y al acceso de la información.
+          Por tal
           motivo se selecciona un nivel medio de importancia relativa.
     \item Mantenibilidad: como el producto posee conexión con internet, el
-          software deberá poder actualizarse por dicho medio, actualizando sus funciones
+          software deberá poder actualizarse por dicho medio, actualizando sus
+          funciones
           y eliminando posibles bugs.
 \end{itemize}
 \subsection{Asignación de características de calidad a los niveles de prueba}
@@ -175,91 +177,113 @@ ISO/IEC9126 con su respectiva importancia relativa.
 \begin{table}[!ht]
     \centering
 
-       \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|X|c|X|c|@{}}\hline \hline
-            \rowcolor[HTML]{d6c6c3}     
-                   & \bf Funcionalidad  & \bf Confiabilidad & \bf Usabilidad & \bf
-            Eficiencia                      & \bf Mantenibilidad & \bf Portabilidad                              \\ \hline
-            \hline
-            Importancia relativa            &          20        &            30     &       30       &     & 20 &
-            \\
-            Test Unitario                   &           ++       &           ++      &                &     &  & \\
-            Test de integración de software &                    &                   &        ++        &     & + &
-            \\
-            Test de integración HW/SW       &           ++       &          ++       &                &     &  &
-            \\
-            Test de sistema                 &                    &           ++        &                &     &  & \\
-            Test de aceptación              &           ++       &                   &                &     & 
-             &
-            \\
-            Pruebas de campo                &          ++        &                 &        +        &     &  &
-            \\ \hline
-        \end{tabularx}
-        \caption{Asignación de las características de calidad a los niveles de prueba. (++: El testeo de la característica de calidad
-se realizará a fondo en este nivel de prueba); (+: El testeo de la característica de calidad será cubierto en este nivel de
-prueba); (vacío: La característica de calidad no representa un problema en este nivel de prueba).}
-  
-    
+    \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|X|c|X|c|@{}}\hline \hline
+        \rowcolor[HTML]{d6c6c3}
+                                        & \bf Funcionalidad  & \bf Confiabilidad & \bf Usabilidad &
+        \bf
+        Eficiencia                      & \bf Mantenibilidad & \bf
+        Portabilidad                                                                                \\ \hline
+        \hline
+        Importancia relativa            & 20                 &
+        30                              & 30                 &                   & 20             &
+        \\
+        Test Unitario                   & ++                 & ++
+                                        &                    &                   &                & \\
+        Test de integración de software &                    &
+                                        & ++                 &                   & +              &
+        \\
+        Test de integración HW/SW       & ++                 & ++
+                                        &                    &                   &                &
+        \\
+        Test de sistema                 &                    & ++
+                                        &                    &                   &                & \\
+        Test de aceptación              & ++                 &
+                                        &                    &                   &
+                                        &
+        \\
+        Pruebas de campo                & ++                 &
+                                        & +                  &                   &                &
+        \\ \hline
+    \end{tabularx}
+    \caption{Asignación de las características de calidad a los niveles de
+        prueba. (++: El testeo de la característica de calidad
+        se realizará a fondo en este nivel de prueba); (+: El testeo de la
+        característica de calidad será cubierto en este nivel de
+        prueba); (vacío: La característica de calidad no representa un problema en este
+        nivel de prueba).}
+
 \end{table}
 \begin{itemize}
-\item Funcionalidad: para verificar que se cumple con los requerimientos funcionales, se realizarán los testeos unitarios sobre cada una de las funciones con pruebas de aceptación con el cliente. Además se realizarán pruebas a nivel de integración de HW/SW y de campo.
-\item Confiablidad: con el fin de verificar que el software es confiable se realizarán exhaustivas pruebas unitarias de cada una de las partes que componen lo componen. Además se realizarán testeos a nivel de sistema completo y en campo.
-\item Usabilidad: se verificará la usabilidad del software realizando pruebas en nivel de integración de software con el cliente.
-\item Mantenibilidad: se realizarán pruebas de mantenibilidad del software en la etapa de integración del software.
+    \item Funcionalidad: para verificar que se cumple con los requerimientos
+          funcionales, se realizarán los testeos unitarios sobre cada una de las
+          funciones con pruebas de aceptación con el cliente. Además se realizarán
+          pruebas a nivel de integración de HW/SW y de campo.
+    \item Confiablidad: con el fin de verificar que el software es confiable se
+          realizarán exhaustivas pruebas unitarias de cada una de las partes que componen
+          lo componen. Además se realizarán testeos a nivel de sistema completo y en
+          campo.
+    \item Usabilidad: se verificará la usabilidad del software realizando pruebas
+          en nivel de integración de software con el cliente.
+    \item Mantenibilidad: se realizarán pruebas de mantenibilidad del software en
+          la etapa de integración del software.
 \end{itemize}
 
 \section{División del sistema en subsistemas}
 
 Los subsistemas que conformar al dispositivo a desarrollar son:
 \begin{itemize}
-\item COM: bloque de comunicación entre la APP con módulo WiFi y con el microcontrolador.
-\item OUTCTRL: salida de control para indicador luminoso LED RGB y buzzer.
-\item READSR: lectura de sensores de humedad, temperatura y niveles de C02.
-\item TOTALSYS: total del sistema.
+    \item COM: bloque de comunicación entre la APP con módulo WiFi y con el
+          microcontrolador.
+    \item OUTCTRL: salida de control para indicador luminoso LED RGB y buzzer.
+    \item READSR: lectura de sensores de humedad, temperatura y niveles de C02.
+    \item TOTALSYS: total del sistema.
 \end{itemize}
-
 
 Determinación de las características de test a utilizar:
 \begin{itemize}
-\item STT: state transition testing.
-\item CFT: control flow test.
-\item ECT elementary comparison test.
-\item CTM classification-tree method.
+    \item STT: state transition testing.
+    \item CFT: control flow test.
+    \item ECT elementary comparison test.
+    \item CTM classification-tree method.
 \end{itemize}
 
 Nota:\\
-++: El testeo de la característica de calidad se realizará a fondo en este subsistema.\\
+++: El testeo de la característica de calidad se realizará a fondo en este
+subsistema.\\
 +: el testeo de la característica calidad será cubierto en este subsistema.
-Vacio: la característica calidad no representa un problema en este subsistema. \\
+Vacio: la característica calidad no representa un problema en este subsistema.
+\\
 
 \subsection{Test unitario}
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-           &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & ++ & ++ & ++ & +		\\
-        Confiabilidad    & 30 &+ &++ & &+                        \\
-        Usabilidad       & 30 &++ &+ &++ &+                        \\
-        Mantenibilidad   & 20 &+ & &+ &+                        \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & ++  & ++      & ++     & +        \\
+        Confiabilidad             & 30 & +   & ++      &        & +        \\
+        Usabilidad                & 30 & ++  & +       & ++     & +        \\
+        Mantenibilidad            & 20 & +   &         & +      & +        \\
         \hline
     \end{tabular}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       STT & & & & ++ \\
-      CFT & ++ & & ++& \\
-      ECT & & ++ & &  \\
+        STT                        &     &         &        & ++       \\
+        CFT                        & ++  &         & ++     &          \\
+        ECT                        &     & ++      &        &          \\
         \hline
     \end{tabular}
     \caption{Técnica de testeo utilizada por cada subsistema.}
@@ -271,30 +295,31 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \begin{table}[!ht]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-            &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & ++ & + & ++ & +		\\
-        Confiabilidad    & 30 & ++ & ++ & & +                        \\
-        Usabilidad       & 30 & ++ & + & ++ & +                        \\
-        Mantenibilidad   & 20 & + & & + & +                        \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & ++  & +       & ++     & +        \\
+        Confiabilidad             & 30 & ++  & ++      &        & +        \\
+        Usabilidad                & 30 & ++  & +       & ++     & +        \\
+        Mantenibilidad            & 20 & +   &         & +      & +        \\
         \hline
     \end{tabular}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       STT & ++ & & & ++ \\
-      CFT & & ++ & + & \\
-      ECT & & + & &  \\
+        STT                        & ++  &         &        & ++       \\
+        CFT                        &     & ++      & +      &          \\
+        ECT                        &     & +       &        &          \\
         \hline
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
@@ -305,28 +330,29 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-         &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & ++ & ++ & ++ & +		\\
-        Confiabilidad    & 30 & ++ & ++ & +& +                        \\
-        Usabilidad       & 30 & ++ & + & ++ & ++                        \\
-        Mantenibilidad   & 20 & + & + & + & +                        \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & ++  & ++      & ++     & +        \\
+        Confiabilidad             & 30 & ++  & ++      & +      & +        \\
+        Usabilidad                & 30 & ++  & +       & ++     & ++       \\
+        Mantenibilidad            & 20 & +   & +       & +      & +        \\
         \hline
     \end{tabularx}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       CTM & ++ & ++ & + & ++ \\
+        CTM                        & ++  & ++      & +      & ++       \\
         \hline
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
@@ -338,28 +364,29 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-            &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & ++ & + & ++ & +		\\
-        Confiabilidad    & 30 & ++ & ++ & & +                        \\
-        Usabilidad       & 30 & ++ & + & ++ & +                        \\
-        Mantenibilidad   & 20 & + & &  & +                        \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & ++  & +       & ++     & +        \\
+        Confiabilidad             & 30 & ++  & ++      &        & +        \\
+        Usabilidad                & 30 & ++  & +       & ++     & +        \\
+        Mantenibilidad            & 20 & +   &         &        & +        \\
         \hline
     \end{tabularx}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-      CTM & ++ &++ &+ & ++ \\
+        CTM                        & ++  & ++      & +      & ++       \\
         \hline
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
@@ -370,28 +397,29 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-            &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & + & + & + & ++		\\
-        Confiabilidad    & 30 & + & + & + & ++                        \\
-        Usabilidad       & 30 & + & + & + & ++                        \\
-        Mantenibilidad   & 20 &  & &  & ++                        \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & +   & +       & +      & ++       \\
+        Confiabilidad             & 30 & +   & +       & +      & ++       \\
+        Usabilidad                & 30 & +   & +       & +      & ++       \\
+        Mantenibilidad            & 20 &     &         &        & ++       \\
         \hline
     \end{tabularx}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-      CTM & ++ &++ &+ & ++ \\
+        CTM                        & ++  & ++      & +      & ++       \\
         \hline
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
@@ -402,32 +430,32 @@ Vacio: la característica calidad no representa un problema en este subsistema. 
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Importancia relativa (\%)& &  COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Importancia relativa (\%) &    & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-       
-            &  &35 & 10 &35 & 20                          \\
-        Funcionalidad    & 20 & ++ & ++ & ++ & ++		\\
-        Confiabilidad    & 30 & + & + & + & ++                        \\
-        Usabilidad       & 30 & + & + & + & ++                        \\
-        Mantenibilidad   & 20 &  & &  &                         \\
+
+                                  &    & 35  & 10      & 35     & 20       \\
+        Funcionalidad             & 20 & ++  & ++      & ++     & ++       \\
+        Confiabilidad             & 30 & +   & +       & +      & ++       \\
+        Usabilidad                & 30 & +   & +       & +      & ++       \\
+        Mantenibilidad            & 20 &     &         &        &          \\
         \hline
     \end{tabularx}
-    \caption{Importancia de testeo por combinación de subsistema/ característic de calidad.}
+    \caption{Importancia de testeo por combinación de subsistema/ característic
+        de calidad.}
 \end{table}
 
 \FloatBarrier
 \begin{table}[!ht]
     \centering
     \begin{tabularx}{\linewidth}{@{}|c|X|c|X|c|X|c|@{}}\hline \hline
-    \rowcolor[HTML]{d6c6c3}
- Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS\\
+        \rowcolor[HTML]{d6c6c3}
+        Técnica de testeo aplicada & COM & OUTCTRL & READSR & TOTALSYS \\
         \hline
-      CTM & ++ &++ &+ & ++ \\
+        CTM                        & ++  & ++      & +      & ++       \\
         \hline
     \end{tabularx}
     \caption{Técnica de testeo utilizada por cada subsistema.}
 \end{table}
-
 
 \end{document}
