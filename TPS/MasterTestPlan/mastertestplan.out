@@ -9,3 +9,11 @@
 \BOOKMARK [1][-]{section.3}{Bases del test}{}% 9
 \BOOKMARK [1][-]{section.4}{Estrategia general del test}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Caracter\355sticas de calidad}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Asignaci\363n de caracter\355sticas de calidad a los niveles de prueba}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Divisi\363n del sistema en subsistemas}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Test unitario}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Test de integraci\363n de software}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Test de integraci\363n de software/hardware}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Test de sistema}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.5}{Test de aceptaci\363n}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.6}{Test de campos}{section.5}% 19
