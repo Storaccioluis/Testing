@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.21)  8 JUN 2022 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.10.21)  7 JUN 2022 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,17 +1033,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 98.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 96.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 99.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3]
-Overfull \hbox (1.92807pt too wide) in paragraph at lines 208--208
-[]|\T1/ptm/b/n/9 Mantenibilidad| 
+Overfull \hbox (36.10872pt too wide) in paragraph at lines 196--196
+[]|\T1/ptm/b/n/10.95 Funcionalidad| 
+ []
+
+
+Overfull \hbox (19.07062pt too wide) in paragraph at lines 196--196
+[]|\T1/ptm/b/n/10.95 Usabilidad| 
+ []
+
+
+Overfull \hbox (40.97032pt too wide) in paragraph at lines 196--196
+[]|\T1/ptm/b/n/10.95 Mantenibilidad| 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
 
  []
 
@@ -1054,29 +1064,29 @@ Package Fancyhdr Warning: \headheight is too small (13.59999pt):
  This may cause the page layout to be inconsistent, however.
 
 [5] [6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
  (./mastertestplan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
 Package rerunfilecheck Info: File `mastertestplan.out' has not changed.
 (rerunfilecheck)             Checksum: E04C4AFC8E195696F683897A2DAE7B2D;1278.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 462.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
  ) 
 Here is how much of TeX's memory you used:
- 8643 strings out of 494747
- 119506 string characters out of 6176206
- 218526 words of memory out of 5000000
- 11762 multiletter control sequences out of 15000+600000
- 47148 words of font info for 58 fonts, out of 8000000 for 9000
+ 8638 strings out of 494747
+ 119450 string characters out of 6176206
+ 216526 words of memory out of 5000000
+ 11758 multiletter control sequences out of 15000+600000
+ 41057 words of font info for 54 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 41i,11n,43p,547b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,43p,547b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on mastertestplan.pdf (9 pages, 459407 bytes).
+Output written on mastertestplan.pdf (9 pages, 459306 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
