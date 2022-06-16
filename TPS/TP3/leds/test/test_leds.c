@@ -1,6 +1,6 @@
 /**
  * @file test_leds.c
- * @author your name (you@domain.com)
+ * @author Storaccio Luis Sebastián (storaccioluis@gmail.com)
  * @brief  Test uniario TP3
  * Driver de LEDs: test
     * Después de la inicialización de los LEDs deben quedar apagados.
