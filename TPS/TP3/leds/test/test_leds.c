@@ -120,6 +120,11 @@ void test_led_is_off(void)
     TEST_ASSERT_FALSE((ledsVirtuals & 1 << 10));
 }
 
+/**
+ * @brief test_invalid_upper_limit_ton_led:
+ * Función que verifica que la funciones de error se llamen cuando se ingresa un valor fuera de los límites.
+ * 
+ */
 void test_invalid_upper_limit_ton_led(void)
 {
     RegistrarMensaje_Expect(ALERTA, "oneLedTurnOn", 0, "Número de LED inválido");
