@@ -2,6 +2,8 @@
 
 /*=======Automagically Detected Files To Include=====*/
 #include "unity.h"
+#include "cmock.h"
+#include "mock_errores.h"
 
 int GlobalExpectCount;
 int GlobalVerifyOrder;
@@ -14,6 +16,11 @@ extern void test_all_leds_inits_off(void);
 extern void test_one_led_on(void);
 extern void test_one_led_off(void);
 extern void test_turn_on_off_multiple_leds(void);
+extern void test_turn_on_all_leds(void);
+extern void test_turn_off_all_leds(void);
+extern void test_led_is_on(void);
+extern void test_led_is_off(void);
+extern void test_invalid_upper_limit_ton_led(void);
 
 
 /*=======Mock Management=====*/
@@ -22,12 +29,15 @@ static void CMock_Init(void)
   GlobalExpectCount = 0;
   GlobalVerifyOrder = 0;
   GlobalOrderError = NULL;
+  mock_errores_Init();
 }
 static void CMock_Verify(void)
 {
+  mock_errores_Verify();
 }
 static void CMock_Destroy(void)
 {
+  mock_errores_Destroy();
 }
 
 /*=======Teardown (stub)=====*/
@@ -81,10 +91,16 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_leds.c");
-  run_test(test_all_leds_inits_off, "test_all_leds_inits_off", 34);
-  run_test(test_one_led_on, "test_one_led_on", 45);
+  run_test(test_all_leds_inits_off, "test_all_leds_inits_off", 35);
+  run_test(test_one_led_on, "test_one_led_on", 46);
   run_test(test_one_led_off, "test_one_led_off", 56);
-  run_test(test_turn_on_off_multiple_leds, "test_turn_on_off_multiple_leds", 68);
+  run_test(test_turn_on_off_multiple_leds, "test_turn_on_off_multiple_leds", 67);
+  run_test(test_turn_on_all_leds, "test_turn_on_all_leds", 81);
+  run_test(test_turn_off_all_leds, "test_turn_off_all_leds", 92);
+  run_test(test_led_is_on, "test_led_is_on", 103);
+  run_test(test_led_is_off, "test_led_is_off", 113);
+  run_test(test_invalid_upper_limit_ton_led, "test_invalid_upper_limit_ton_led", 123);
 
+  CMock_Guts_MemFreeFinal();
   return UnityEnd();
 }

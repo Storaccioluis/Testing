@@ -19,6 +19,7 @@
  */
 #include "unity.h"
 #include "leds.h"
+#include "mock_errores.h"
 
 static uint16_t ledsVirtuals;
 
@@ -47,7 +48,6 @@ void test_all_leds_inits_off(void)
  */
 void test_one_led_on(void)
 {
-
     oneLedTurnOn(5);
     TEST_ASSERT_EQUAL_HEX16(1 << 4, ledsVirtuals);
 }
@@ -58,7 +58,6 @@ void test_one_led_on(void)
  */
 void test_one_led_off(void)
 {
-
     oneLedTurnOn(5);
     oneLedTurnOff(5);
     TEST_ASSERT_EQUAL_HEX16(0x0000, ledsVirtuals);
@@ -76,11 +75,54 @@ void test_turn_on_off_multiple_leds(void)
     oneLedTurnOn(11);
     oneLedTurnOff(3);
     oneLedTurnOff(11);
-    TEST_ASSERT_EQUAL_HEX16(1<<4,ledsVirtuals);
+    TEST_ASSERT_EQUAL_HEX16(1 << 4, ledsVirtuals);
 }
-/*
- *
+/**
+ * @brief test_turn_on_all_leds:
  * Se pueden prender todos los LEDs de una vez.
+ */
+void test_turn_on_all_leds(void)
+{
+    allLedTurnOff();
+    allLedTurnOn();
+    TEST_ASSERT_EQUAL_HEX16(0xFFFF, ledsVirtuals);
+}
+
+/**
+ * @brief test_turn_off_all_leds:
  * Se pueden apagar todos los LEDs de una vez.
+ */
+void test_turn_off_all_leds(void)
+{
+    allLedTurnOn();
+    allLedTurnOff();
+    TEST_ASSERT_EQUAL_HEX16(0x0000, ledsVirtuals);
+}
+
+/**
+ * @brief test_led_is_on:
  * Se puede consultar el estado de un LED.
  */
+void test_led_is_on(void)
+{
+    oneLedTurnOn(5);
+    TEST_ASSERT_TRUE(ledsVirtuals & 1 << 4);
+}
+
+/**
+ * @brief test_led_is_off:
+ * Se puede consultar el estado de un LED.
+ *
+ */
+void test_led_is_off(void)
+{
+    oneLedTurnOff(11);
+    TEST_ASSERT_FALSE((ledsVirtuals & 1 << 10));
+}
+
+void test_invalid_upper_limit_ton_led(void)
+{
+    RegistrarMensaje_Expect(ALERTA, "oneLedTurnOn", 0, "Número de LED inválido");
+    RegistrarMensaje_IgnoreArg_linea();
+    oneLedTurnOn(17);
+}
