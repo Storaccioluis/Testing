@@ -1,0 +1,5 @@
+---
+src/AHT10.c:
+- TEST
+build/test/mocks/mock_AHT10_port.c:
+- TEST
