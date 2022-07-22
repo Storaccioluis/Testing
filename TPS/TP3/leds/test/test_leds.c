@@ -101,29 +101,34 @@ void test_turn_off_all_leds(void)
 
 /**
  * @brief test_led_is_on:
- * Se puede consultar el estado de un LED.
+ * Test para verificar si el estado de un led es encendido (getStateLed(led) return true).
  */
-void test_led_is_on(void)
+void test_is_led_on(void)
 {
+    bool ret = false;
     oneLedTurnOn(5);
-    TEST_ASSERT_TRUE(ledsVirtuals & 1 << 4);
+    ret = getStateLed(5);
+    TEST_ASSERT_EQUAL(true, ret);
 }
 
 /**
  * @brief test_led_is_off:
- * Se puede consultar el estado de un LED.
+ *  Test para verificar si el estado de un led es apagado (getStateLed(led) return false).
  *
  */
-void test_led_is_off(void)
+void test_is_led_off(void)
 {
-    oneLedTurnOff(11);
-    TEST_ASSERT_FALSE((ledsVirtuals & 1 << 10));
+    bool ret = false;
+    allLedTurnOn();
+    oneLedTurnOff(7);
+    ret = getStateLed(7);
+    TEST_ASSERT_EQUAL(false, ret);
 }
 
 /**
  * @brief test_invalid_upper_limit_ton_led:
  * Función que verifica que la funciones de error se llamen cuando se ingresa un valor fuera de los límites.
- * 
+ *
  */
 void test_invalid_upper_limit_ton_led(void)
 {
